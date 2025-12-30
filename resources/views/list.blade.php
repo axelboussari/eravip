@@ -54,12 +54,12 @@
                                 <td>
                                     <div class="btn-group" role="group">
                                         <a href="{{ route('citizens.show', $citizen->id) }}" 
-                                           class="btn btn-sm btn-info" 
+                                           class="btn btn-sm btn-info btn btn-outline-info" 
                                            title="Voir">
                                             <i class="las la-eye"></i>
                                         </a>
                                         <a href="{{ route('citizens.edit', $citizen->id) }}" 
-                                           class="btn btn-sm btn-warning" 
+                                           class="btn btn-sm btn-warning btn btn-outline-warning" 
                                            title="Modifier">
                                             <i class="las la-edit"></i>
                                         </a>
@@ -70,7 +70,7 @@
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" 
-                                                    class="btn btn-sm btn-danger" 
+                                                    class="btn btn-sm btn-danger btn btn-outline-danger" 
                                                     title="Supprimer">
                                                 <i class="las la-trash"></i>
                                             </button>
